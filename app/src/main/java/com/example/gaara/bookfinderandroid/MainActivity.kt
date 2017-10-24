@@ -1,5 +1,6 @@
 package com.example.gaara.bookfinderandroid
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -8,6 +9,8 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.example.gaara.bookfinderandroid.UserManager.LoginActivity
+import com.example.gaara.bookfinderandroid.UserManager.SessionManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -17,6 +20,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        val sessionManager = SessionManager(applicationContext)
+
+        if(!sessionManager.isLoggedIn()){
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
