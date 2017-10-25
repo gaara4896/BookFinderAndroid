@@ -8,18 +8,20 @@ import android.util.Log
 import android.widget.Toast
 import com.example.gaara.bookfinderandroid.MainActivity
 import com.example.gaara.bookfinderandroid.R
-import com.twitter.sdk.android.core.DefaultLogger
-import com.twitter.sdk.android.core.Twitter
-import com.twitter.sdk.android.core.TwitterAuthConfig
-import com.twitter.sdk.android.core.TwitterConfig
+import com.twitter.sdk.android.core.*
 import kotlinx.android.synthetic.main.activity_login.*
+import com.twitter.sdk.android.core.TwitterException
+import com.twitter.sdk.android.core.TwitterSession
 
 class LoginActivity : AppCompatActivity() {
+
+    private val TWITTER_KEY = "A8MSq8r8QXI8SrtFsiHeOIAnx"
+    private val TWITTER_SECRET = "T8mwnsDfDW68YKCEsueWhHgHz6bVrPhS7MZOrvjOtTqWe12Yjk"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val config = TwitterConfig.Builder(this)
                 .logger(DefaultLogger(Log.DEBUG))
-                .twitterAuthConfig(TwitterAuthConfig("KEY", "SECRET"))
+                .twitterAuthConfig(TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET))
                 .debug(true)
                 .build();
         Twitter.initialize(config);
@@ -46,9 +48,25 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        button_LoginTwitter.setOnClickListener {
+        button_LoginTwitter.callback = (object : Callback<TwitterSession>() {
+            override fun success(result: Result<TwitterSession>) {
+                SessionManager(applicationContext).setLogin(true)
+                startActivity(Intent(applicationContext, MainActivity::class.java))
+                finish()
+            }
+
+            override fun failure(exception: TwitterException) {
+                Toast.makeText(applicationContext, "Fail Twitter Login", Toast.LENGTH_LONG).show()
+            }
+        })
+
+        button_Register.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
+        }
+
+        button_LoginGoogle.setOnClickListener {
             SessionManager(applicationContext).setLogin(true)
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(applicationContext, MainActivity::class.java))
             finish()
         }
 

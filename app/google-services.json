@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "873661050131",
+    "project_id": "firebase-bookfinderapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873661050131:android:f15eb8c8c4110286",
+        "android_client_info": {
+          "package_name": "com.example.gaara.bookfinderandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873661050131-vk45ei7n4sh173pg7vq2ditqdj364d98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gaara.bookfinderandroid",
+            "certificate_hash": "fc6788630ab31cfbad1a0ca65a75784d98c97855"
+          }
+        },
+        {
+          "client_id": "873661050131-8ho6oao9e1vriv01p3uuf7082i0qu9j3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN_7IzyDZFyOhhMaFWWYKWN4doZDSiI-8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

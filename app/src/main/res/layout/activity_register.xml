@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gaara.bookfinderandroid.UserManager.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Login ID"
+            android:id="@+id/editText_LoginId"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/editText_Password"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:id="@+id/editText_ConfirmPassword"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/editText_Email"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:id="@+id/editText_Name"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"/>
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/button_Register"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
