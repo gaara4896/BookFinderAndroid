@@ -2,17 +2,18 @@ package com.example.gaara.bookfinderandroid
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.example.gaara.bookfinderandroid.Fragment.BookFragment
 import com.example.gaara.bookfinderandroid.UserManager.LoginActivity
 import com.example.gaara.bookfinderandroid.UserManager.SessionManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -28,17 +29,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             finish()
         }
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
-
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+        
+        val books = arrayOf(
+                arrayOf("Intelligent Investor", "Benjamin Graham"),
+                arrayOf("Rich Dad Poor Dad", "Robery Kiyosaki"),
+                arrayOf("The Better Angels of Our Nature", "Steven Pinker"),
+                arrayOf("The Art Of The Deal", "Donald Trump"),
+                arrayOf("The Rational Optimist", "Matt Ridley"),
+                arrayOf("World Order", "Henry Kissinger"))
+
+        listView_Books.adapter = BookFragment(applicationContext, books)
+        listView_Books.divider = this.getDrawable(R.drawable.transparent)
     }
 
     override fun onBackPressed() {
