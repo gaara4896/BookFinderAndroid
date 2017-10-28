@@ -46,6 +46,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         listView_Books.adapter = BookFragment(applicationContext, books)
         listView_Books.divider = this.getDrawable(R.drawable.transparent)
+
+        textView_AdvanceSearch.setOnClickListener {
+            startActivity(Intent(this, AdvanceSearch::class.java))
+        }
     }
 
     override fun onBackPressed() {

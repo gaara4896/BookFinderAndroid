@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserManager.LoginActivity" />
-        <activity android:name=".UserManager.RegisterActivity"></activity>
+        <activity android:name=".UserManager.RegisterActivity" />
+        <activity android:name=".AdvanceSearch"></activity>
     </application>
 
 </manifest>
