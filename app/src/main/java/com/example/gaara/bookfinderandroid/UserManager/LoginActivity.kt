@@ -27,6 +27,7 @@ class LoginActivity : AppCompatActivity() {
         Twitter.initialize(config);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        setSupportActionBar(toolbar)
 
         button_Login.setOnClickListener {
             if(TextUtils.isEmpty(editText_LoginId.text)){

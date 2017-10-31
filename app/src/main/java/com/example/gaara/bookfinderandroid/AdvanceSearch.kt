@@ -1,6 +1,7 @@
 package com.example.gaara.bookfinderandroid
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -14,6 +15,8 @@ class AdvanceSearch : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_advance_search)
+
+        setSupportActionBar(toolbar)
 
         var dateClicked:Int = 0
         val adapter = ArrayAdapter<String>(this,
@@ -65,6 +68,10 @@ class AdvanceSearch : AppCompatActivity() {
             } else {
                 editText_PublicationTo.setText(date)
             }
+        }
+
+        button_Search.setOnClickListener{
+            startActivity(Intent(this, AdvanceSearchResult::class.java))
         }
     }
 }

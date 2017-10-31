@@ -12,6 +12,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+        setSupportActionBar(toolbar)
 
         button_Register.setOnClickListener {
             if(TextUtils.isEmpty(editText_LoginId.text)){
