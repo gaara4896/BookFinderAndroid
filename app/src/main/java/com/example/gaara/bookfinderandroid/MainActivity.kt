@@ -6,9 +6,11 @@ import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import com.example.gaara.bookfinderandroid.Fragment.BookFragment
+import com.example.gaara.bookfinderandroid.R.drawable.book
 import com.example.gaara.bookfinderandroid.UserManager.LoginActivity
 import com.example.gaara.bookfinderandroid.UserManager.SessionManager
 import kotlinx.android.synthetic.main.activity_main.*
@@ -46,6 +48,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         listView_Books.adapter = BookFragment(applicationContext, books)
         listView_Books.divider = this.getDrawable(R.drawable.transparent)
+
+        listView_Books.setOnItemClickListener { parent, view, position, id ->
+            val intent = Intent(this, BookInfo::class.java)
+            intent.putExtra("name", books[position])
+            startActivity(intent)
+        }
 
         textView_AdvanceSearch.setOnClickListener {
             startActivity(Intent(this, AdvanceSearch::class.java))
