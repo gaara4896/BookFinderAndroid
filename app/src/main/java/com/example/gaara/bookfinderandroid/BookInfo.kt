@@ -1,11 +1,10 @@
 package com.example.gaara.bookfinderandroid
 
 import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
-import com.example.gaara.bookfinderandroid.Fragment.BookStoreFragment
 import com.example.gaara.bookfinderandroid.Fragment.BookStoreRecycle
 import com.example.gaara.bookfinderandroid.Utils.BookStore
 import kotlinx.android.synthetic.main.activity_book_info.*
@@ -34,18 +33,10 @@ class BookInfo : AppCompatActivity() {
                 BookStore("Rising Star Book", "Subang Jaya", "5KM", 41.30)
         )
 
-        for (bookStore in bookStores){
-            Log.d("bookStores", "${bookStore.name} ${bookStore.address} ${bookStore.range} ${bookStore.price}")
-        }
-
         recycleView_BookStore.layoutManager = LinearLayoutManager(applicationContext)
 
-        recycleView_BookStore.adapter = BookStoreRecycle(bookStores){
+        recycleView_BookStore.adapter = BookStoreRecycle(applicationContext, bookStores){
             Log.d("Recycle", "${it.name} is working")
         }
-
-/*        listView_BookStore.adapter = BookStoreFragment(applicationContext, bookStores)
-        listView_BookStore.divider = this.getDrawable(R.drawable.transparent)
-        listView_BookStore.isNestedScrollingEnabled = true*/
     }
 }

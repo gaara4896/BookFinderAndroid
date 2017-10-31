@@ -23,7 +23,8 @@
         <activity android:name=".UserManager.RegisterActivity" />
         <activity android:name=".AdvanceSearch" />
         <activity android:name=".BookInfo" />
-        <activity android:name=".AdvanceSearchResult"></activity>
+        <activity android:name=".AdvanceSearchResult" />
+        <activity android:name=".BookStoreList"></activity>
     </application>
 
 </manifest>

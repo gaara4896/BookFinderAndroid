@@ -1,7 +1,7 @@
 package com.example.gaara.bookfinderandroid.Fragment
 
+import android.content.Context
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.listview_fragment_bookstores.view.*
 /**
  * Created by gaara on 10/31/17.
  */
-class BookStoreRecycle(val bookStores: Array<BookStore>, val listener:(BookStore) -> Unit): RecyclerView.Adapter<BookStoreRecycle.ViewHolder>(){
+class BookStoreRecycle(val context:Context, val bookStores: Array<BookStore>, val listener:(BookStore) -> Unit): RecyclerView.Adapter<BookStoreRecycle.ViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookStoreRecycle.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.listview_fragment_bookstores, parent, false)
@@ -20,7 +20,7 @@ class BookStoreRecycle(val bookStores: Array<BookStore>, val listener:(BookStore
     }
 
     override fun onBindViewHolder(holder: BookStoreRecycle.ViewHolder, position: Int) {
-        holder.bindItems(bookStores[position], listener)
+        holder.bindItems(context, bookStores[position], position, listener)
     }
 
     override fun getItemCount(): Int {
@@ -28,12 +28,24 @@ class BookStoreRecycle(val bookStores: Array<BookStore>, val listener:(BookStore
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        fun bindItems(bookStore:BookStore, listener: (BookStore) -> Unit) = with(itemView){
+        fun bindItems(context:Context, bookStore:BookStore,position:Int, listener: (BookStore) -> Unit) = with(itemView){
             itemView.textView_BookStoreName.text = bookStore.name
             itemView.textView_BookStoreAddress.text = bookStore.address
             itemView.textView_BookStoreRange.text = bookStore.range
-            itemView.textView_BookStorePrice.text = "RM ${bookStore.price.toString()}"
-            Log.d("Recycle", "Success Binding")
+            if(bookStore.price!= null){
+                itemView.textView_BookStorePrice.text = "RM ${bookStore.price.toString()}"
+            }
+            when(position % 3){
+                0 -> {
+                    imageView_BookStore.setImageResource(resources.getIdentifier("drawable/popular1", null, context.packageName))
+                }
+                1 -> {
+                    imageView_BookStore.setImageResource(resources.getIdentifier("drawable/popular2", null, context.packageName))
+                }
+                2 -> {
+                    imageView_BookStore.setImageResource(resources.getIdentifier("drawable/mph", null, context.packageName))
+                }
+            }
         }
     }
 

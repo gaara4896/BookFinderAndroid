@@ -1,8 +1,8 @@
 package com.example.gaara.bookfinderandroid
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import com.example.gaara.bookfinderandroid.Fragment.BookFragment
 import kotlinx.android.synthetic.main.activity_advance_search_result.*
 
