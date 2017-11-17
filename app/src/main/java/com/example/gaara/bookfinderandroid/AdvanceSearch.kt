@@ -17,6 +17,7 @@ class AdvanceSearch : AppCompatActivity() {
         setContentView(R.layout.activity_advance_search)
 
         setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         var dateClicked:Int = 0
         val adapter = ArrayAdapter<String>(this,

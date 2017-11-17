@@ -13,6 +13,8 @@ class AdvanceSearchResult : AppCompatActivity() {
         setContentView(R.layout.activity_advance_search_result)
         setSupportActionBar(toolbar)
 
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
         var books = arrayOf(
                 arrayOf("Intelligent Investor", "Benjamin Graham"),
                 arrayOf("Rich Dad Poor Dad", "Robery Kiyosaki"),

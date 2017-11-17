@@ -13,6 +13,7 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
         setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         button_Register.setOnClickListener {
             if(TextUtils.isEmpty(editText_LoginId.text)){
