@@ -53,9 +53,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             startActivity(intent)
         }
 
-        textView_AdvanceSearch.setOnClickListener {
-            startActivity(Intent(this, AdvanceSearch::class.java))
-        }
     }
 
     override fun onBackPressed() {
@@ -76,10 +73,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        when (item.itemId) {
-            R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
-        }
+        return true
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -87,6 +81,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_Bookstores -> {
                 startActivity(Intent(this, BookStoreList::class.java))
+            }
+            R.id.nav_AdvanceSearch -> {
+                startActivity(Intent(this, AdvanceSearch::class.java))
             }
             R.id.nav_logout -> {
                 SessionManager(applicationContext).setLogin(false)
