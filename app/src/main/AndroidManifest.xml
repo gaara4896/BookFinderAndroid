@@ -24,7 +24,8 @@
         <activity android:name=".AdvanceSearch" />
         <activity android:name=".BookInfo" />
         <activity android:name=".AdvanceSearchResult" />
-        <activity android:name=".BookStoreList"></activity>
+        <activity android:name=".BookStoreList" />
+        <activity android:name=".UserManager.EmailLogin"></activity>
     </application>
 
 </manifest>

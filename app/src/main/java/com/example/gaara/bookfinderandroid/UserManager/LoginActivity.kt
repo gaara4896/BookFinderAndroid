@@ -27,24 +27,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         setSupportActionBar(toolbar)
 
-        button_Login.setOnClickListener {
-            if(TextUtils.isEmpty(editText_LoginId.text)){
-                Toast.makeText(applicationContext, "LoginId must not be empty", Toast.LENGTH_LONG).show()
-                return@setOnClickListener
-            }
-            if(TextUtils.isEmpty(editText_Password.text)){
-                Toast.makeText(applicationContext, "Password msut not be empty", Toast.LENGTH_LONG).show()
-                return@setOnClickListener
-            }
-
-            if(editText_LoginId.text.toString().equals("admin", false)
-                    && editText_Password!!.text.toString().equals("admin", false)){
-                SessionManager(applicationContext).setLogin(true)
-                startActivity(Intent(this, MainActivity::class.java))
-                finish()
-            } else {
-                Toast.makeText(applicationContext, "Incorrect Crudential", Toast.LENGTH_LONG).show()
-            }
+        button_LoginEmail.setOnClickListener {
+            startActivity(Intent(this, EmailLogin::class.java))
         }
 
         button_LoginTwitter.callback = (object : Callback<TwitterSession>() {
@@ -58,10 +42,6 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Fail Twitter Login", Toast.LENGTH_LONG).show()
             }
         })
-
-        button_Register.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
-        }
 
         button_LoginGoogle.setOnClickListener {
             SessionManager(applicationContext).setLogin(true)
