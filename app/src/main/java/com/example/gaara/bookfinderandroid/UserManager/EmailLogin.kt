@@ -1,8 +1,8 @@
 package com.example.gaara.bookfinderandroid.UserManager
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.widget.Toast
 import com.example.gaara.bookfinderandroid.MainActivity

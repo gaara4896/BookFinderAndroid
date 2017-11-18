@@ -5,17 +5,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.ArrayAdapter
-import kotlinx.android.synthetic.main.activity_advance_search.*
+import kotlinx.android.synthetic.main.activity_search.*
 import java.util.*
 
-class AdvanceSearch : AppCompatActivity() {
+class Search : AppCompatActivity() {
 
     internal var dateSetListener: DatePickerDialog.OnDateSetListener? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_advance_search)
-
+        setContentView(R.layout.activity_search)
         setSupportActionBar(toolbar)
 
         var dateClicked:Int = 0
@@ -42,8 +41,7 @@ class AdvanceSearch : AppCompatActivity() {
             val date = editText_PublicationFrom.getText().toString()
             val temp = date.split("/".toRegex()).dropLastWhile({ it.isEmpty() }).toTypedArray()
 
-            val datePicker = DatePickerDialog(this@AdvanceSearch,
-                    dateSetListener,
+            val datePicker = DatePickerDialog(this, dateSetListener,
                     Integer.parseInt(temp[2]), Integer.parseInt(temp[1]) - 1, Integer.parseInt(temp[0]))
             datePicker.show()
         }
@@ -53,8 +51,7 @@ class AdvanceSearch : AppCompatActivity() {
             val date = editText_PublicationTo.getText().toString()
             val temp = date.split("/".toRegex()).dropLastWhile({ it.isEmpty() }).toTypedArray()
 
-            val datePicker = DatePickerDialog(this@AdvanceSearch,
-                    dateSetListener,
+            val datePicker = DatePickerDialog(this, dateSetListener,
                     Integer.parseInt(temp[2]), Integer.parseInt(temp[1]) - 1, Integer.parseInt(temp[0]))
             datePicker.show()
         }
@@ -70,7 +67,7 @@ class AdvanceSearch : AppCompatActivity() {
             }
         }
 
-        button_Search.setOnClickListener{
+        button_Search.setOnClickListener {
             startActivity(Intent(this, AdvanceSearchResult::class.java))
         }
     }

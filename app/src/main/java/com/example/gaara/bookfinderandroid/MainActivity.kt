@@ -2,20 +2,13 @@ package com.example.gaara.bookfinderandroid
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.NavigationView
-import android.support.v4.view.GravityCompat
-import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
-import com.example.gaara.bookfinderandroid.Fragment.BookFragment
 import com.example.gaara.bookfinderandroid.UserManager.LoginActivity
 import com.example.gaara.bookfinderandroid.UserManager.SessionManager
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,73 +22,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             finish()
         }
 
-        val toggle = ActionBarDrawerToggle(
-                this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
-        drawer_layout.addDrawerListener(toggle)
-        toggle.syncState()
-
-        nav_view.setNavigationItemSelectedListener(this)
-        
-        val books = arrayOf(
-                arrayOf("Intelligent Investor", "Benjamin Graham"),
-                arrayOf("Rich Dad Poor Dad", "Robery Kiyosaki"),
-                arrayOf("The Better Angels of Our Nature", "Steven Pinker"),
-                arrayOf("The Art Of The Deal", "Donald Trump"),
-                arrayOf("The Rational Optimist", "Matt Ridley"),
-                arrayOf("World Order", "Henry Kissinger"))
-
-        listView_Books.adapter = BookFragment(applicationContext, books)
-        listView_Books.divider = this.getDrawable(R.drawable.transparent)
-
-        listView_Books.setOnItemClickListener { parent, view, position, id ->
-            val intent = Intent(this, BookInfo::class.java)
-            intent.putExtra("name", books[position])
-            startActivity(intent)
+        button_Search.setOnClickListener{
+            startActivity(Intent(this, Search::class.java))
         }
 
-        textView_AdvanceSearch.setOnClickListener {
-            startActivity(Intent(this, AdvanceSearch::class.java))
+        button_Bookstore.setOnClickListener{
+            startActivity(Intent(this, BookStoreList::class.java))
         }
-    }
-
-    override fun onBackPressed() {
-        if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
-            drawer_layout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        when (item.itemId) {
-            R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
-        }
-    }
-
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        // Handle navigation view item clicks here.
-        when (item.itemId) {
-            R.id.nav_Bookstores -> {
-                startActivity(Intent(this, BookStoreList::class.java))
-            }
-            R.id.nav_logout -> {
-                SessionManager(applicationContext).setLogin(false)
-                startActivity(Intent(this, LoginActivity::class.java))
-                finish()
-            }
-        }
-
-        drawer_layout.closeDrawer(GravityCompat.START)
-        return true
     }
 }

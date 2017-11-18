@@ -8,30 +8,37 @@
     tools:context="com.example.gaara.bookfinderandroid.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-
-        <SearchView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/searchView_Name"
-            android:queryHint="Search" />
+            android:layout_margin="20dp"
+            android:dividerPadding="5dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Advance Search"
-            android:textAlignment="center"
-            android:id="@+id/textView_AdvanceSearch"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Search"
+                android:layout_marginTop="50dp"
+                android:id="@+id/button_Search"/>
 
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/listView_Books"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Bookstores"
+                android:layout_marginTop="25dp"
+                android:id="@+id/button_Bookstore"/>
 
-    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
