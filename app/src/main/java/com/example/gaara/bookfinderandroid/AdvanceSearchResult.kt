@@ -29,45 +29,5 @@ class AdvanceSearchResult : AppCompatActivity() {
             intent.putExtra("name", books[position])
             startActivity(intent)
         }
-
-        textView_SortBy.setOnClickListener {
-            when(textView_SortBy.text.toString()){
-                "Sort By: Name" -> {
-                    textView_SortBy.text = "Sort By: Price"
-                    books = arrayOf(
-                            arrayOf("Intelligent Investor", "Benjamin Graham"),
-                            arrayOf("Rich Dad Poor Dad", "Robery Kiyosaki"),
-                            arrayOf("The Better Angels of Our Nature", "Steven Pinker"),
-                            arrayOf("The Art Of The Deal", "Donald Trump"),
-                            arrayOf("The Rational Optimist", "Matt Ridley"),
-                            arrayOf("World Order", "Henry Kissinger"))
-
-                    listView_Books.adapter = BookFragment(applicationContext, books)
-                }
-                "Sort By: Price" -> {
-                    textView_SortBy.text = "Sort By: Author"
-                    books = arrayOf(
-                            arrayOf("The Better Angels of Our Nature", "Steven Pinker"),
-                            arrayOf("The Art Of The Deal", "Donald Trump"),
-                            arrayOf("Intelligent Investor", "Benjamin Graham"),
-                            arrayOf("Rich Dad Poor Dad", "Robery Kiyosaki"),
-                            arrayOf("The Rational Optimist", "Matt Ridley"),
-                            arrayOf("World Order", "Henry Kissinger"))
-
-                    listView_Books.adapter = BookFragment(applicationContext, books)
-                }
-                "Sort By: Author" -> {
-                    textView_SortBy.text = "Sort By: Name"
-                    books = arrayOf(
-                            arrayOf("Rich Dad Poor Dad", "Robery Kiyosaki"),
-                            arrayOf("The Rational Optimist", "Matt Ridley"),
-                            arrayOf("The Better Angels of Our Nature", "Steven Pinker"),
-                            arrayOf("The Art Of The Deal", "Donald Trump"),
-                            arrayOf("Intelligent Investor", "Benjamin Graham"),
-                            arrayOf("World Order", "Henry Kissinger"))
-                    listView_Books.adapter = BookFragment(applicationContext, books)
-                }
-            }
-        }
     }
 }
