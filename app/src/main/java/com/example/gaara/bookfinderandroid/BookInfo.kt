@@ -16,10 +16,9 @@ class BookInfo : AppCompatActivity() {
         setContentView(R.layout.activity_book_info)
 
         setSupportActionBar(toolbar)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         toolbar.setTitleTextColor(Color.WHITE)
 
-        collapsing_toolbar.title = (intent.extras.get("name") as Array<String>)[0]
+        toolbar.title = (intent.extras.get("name") as Array<String>)[0]
 
         val bookStores = arrayOf(
                 BookStore("MPH Online", "Petaling Jaya", "3KM", 39.90),
