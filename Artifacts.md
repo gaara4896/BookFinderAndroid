@@ -2,17 +2,17 @@
 
 ## Table Of Contents
 
-- [Problem Analysis](Artifacts.md/#problem-analysis)
+- [Problem Analysis](Artifacts.md#problem-analysis)
 
-- [PACT Analysis](Artifacts.md/#pact-analysis)
+- [PACT Analysis](Artifacts.md#pact-analysis)
 
-  * [2.1 People](Artifacts.md/#people)
+  * [2.1 People](Artifacts.md#people)
 
-  * [2.2 Activities](Artifacts.md/#activities)
+  * [2.2 Activities](Artifacts.md#activities)
 
-  * [2.3 Context](Artifacts.md/#context)
+  * [2.3 Context](Artifacts.md#context)
 
-  * [2.4 Technology](Artifacts.md/#technology)
+  * [2.4 Technology](Artifacts.md#technology)
 
 ## Problem Analysis
 
