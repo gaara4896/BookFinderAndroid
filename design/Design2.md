@@ -22,39 +22,39 @@
 
 ## Low Fidelity
 
-As you might realize that the design of this low fidelity prototype are much more detail than design 1. This is because when we designing low fidelity for design 1, we still do not have any design in mind, meanwhile we already have a high fidelity prototype for design 1 hence we draw a much more detailed low fidelity prototype. 
+As you might realize that the design of this low fidelity prototype are much more detail than [design 1](Design1.md). This is because when we designing low fidelity for [design 1](Design1.md), we still do not have any design in mind, meanwhile we already have a high fidelity prototype for [design 1](Design1.md) hence we draw a much more detailed low fidelity prototype. 
 
 *Login Activity*
 
-![Login](lowfidelity/d2_login.PNG)
+![Login](lowfidelity/d2_login.png)
 
 *Register Activity*
 
-![Register](lowfidelity/d2_register.PNG)
+![Register](lowfidelity/d2_register.png)
 
 *Main Activity*
 
-![Main](lowfidelity/d2_main.PNG)
+![Main](lowfidelity/d2_main.png)
 
 *Advance Search Activity*
 
-![Advance Search](lowfidelity/d2_advancesearch.PNG)
+![Advance Search](lowfidelity/d2_advancesearch.png)
 
 *Result Activity*
 
-![Result](lowfidelity/d2_result.PNG)
+![Result](lowfidelity/d2_result.png)
 
 *Book Info Activity*
 
-![Book Info](lowfidelity/d2_bookinfo.PNG)
+![Book Info](lowfidelity/d2_bookinfo.png)
 
 *Bookstore Activity*
 
-![Bookstore](lowfidelity/d2_bookstore.PNG)
+![Bookstore](lowfidelity/d2_bookstore.png)
 
 ## High Fidelity
 
-As this is the improved version of design 1, many component remain same with design 1, hence it will not be repeated for those component that still the same
+As this is the improved version of [design 1](Design1.md), many component remain same with [design 1](Design1.md), hence it will not be repeated for those component that still the same
 
 *Login Activity*
 
