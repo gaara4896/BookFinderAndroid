@@ -82,58 +82,60 @@ Bookstore located in various location of Malaysia, despite we can search the pla
 
 ### Online survey Test Run
 
-*Question*
+***Question***
 
-1. Age 
+  1. Age 
 
-1. Job 
-    - Student
-    - Lecturer
-    - Doctor
-    - Engineer
-    - Other
+  1. Job 
+      - Student
+      - Lecturer
+      - Doctor
+      - Engineer
+      - Other
 
-1. How often you read books?
-    - Very rare
-    - Once per month
-    - Once per week
-    - 3 times per week
-    - 5 times per week
-    - Everyday
+  1. How often you read books?
+      - Very rare
+      - Once per month
+      - Once per week
+      - 3 times per week
+      - 5 times per week
+      - Everyday
 
-1. Average number of books you buy per year
+  1. Average number of books you buy per year
 
-1. What are the types of book you normally read?
-    - Philantrophy
-    - Philosophy
-    - IT
-    - Finance
-    - Business
-    - Entrepreneurship
-    - Other
+  1. What are the types of book you normally read?
+      - Philantrophy
+      - Philosophy
+      - IT
+      - Finance
+      - Business
+      - Entrepreneurship
+      - Novel
+      - Other
 
-1. What are the reason you buy books?
-    - Self enrichment
-    - Work
-    - Friend recommendation
-    - Other
+  1. What are the reason you buy books?
+      - Self enrichment
+      - Work
+      - Friend recommendation
+      - Other
 
-1. Medium of buying books 
-    - Physical bookstore
-    - Online
-    - Bookfair
+  1. Medium of buying books 
+      - Physical bookstore
+      - Online
+      - Bookfair
+      - Other
 
-1. Ever face problem in finding cheapest books
-    - Yes
-    - Neutral
-    - No 
+  1. Ever face problem in finding cheapest books
+      - Yes
+      - Neutral
+      - No 
 
-1. How likely you will use a book finding app if there exist one 
-    - Very likely
-    - Likely
-    - Neutral
-    - Not likely
-    - Very not likely
+  1. How likely you will use a book finding app if there exist one 
+      - Very likely
+      - Likely
+      - Neutral
+      - Not likely
+      - Very not likely
 
 #### Observation from Test run
 
@@ -147,6 +149,57 @@ Each member of team will find a close friend, and let them do the test run of th
 
 ### Actual Online Survey
 
-[Result data](Research.md)
+*** Improved question***
+
+  1. Average number of books you buy per year
+      - <5
+      - 5-10
+      - 10-15
+      - 15-20
+      - 20-30
+      - >30
+
+  1. What are the reason you buy books?
+      - Self enrichment
+      - Work
+      - Entertaiment
+      - Other
+
+  1. How likely you will use a book finding app if there exist one 
+      - scale 1 - 10
+
+The question distribute digitally through several medium, which include social media, blog, messaging app, etc. This is the [Result](Research.md) of the survey after being organized. 
+
+Some prank data had been filter, such as meanwhile writing some irrelevant thign in some of the question that other option are provided or spam from the same google account. 
 
 #### Observation from result
+
+A rough summary on the key data - 
+
+- 20/30 of the respondent age range between 18 - 25
+
+- 14/30 of the respondent are Student
+
+- 18/30 of the respondent has average frequency of reading book at least once per week.
+
+- A positive corelation between frequency of reading books and average number of books buy per year
+
+- 17/30 of the respondent uses physical bookstore as one of their medium to buy books
+
+- 12/30 of the respondent uses online as one of their medium of buying books 
+
+- 58.82% of the respondent who uses physical bookstore as one of their medium to buy book face problem in finding cheapest books to buy
+
+- 35.3% of the respondent who uses physical bookstore as one of their medium to buy book are neutral in facing the problem of finding the cheapest books to buy
+
+- 41.67% of the respondent who uses online as one of their medium to buy books face problem in finding the cheapest books to buy
+
+- 33.33% of the respondent who uses online as one of their medium to buy books are neutral in facing the problem of finding the cheapest books to buy
+
+A large number of respondent are student are most likely cause by the medium that used to distribute this survey, such as through some acedemic group or class group chat or even university confession page. 
+
+Positive corelation between frequency of reading books and books buy per year are obviosu as they able to finish more books if the frequency of reading books are higher. 
+
+From the observation, we can know that there are still a larger proportion of the poeple who buy books in physical store than buy it online. This could be because buying books in physical store allow them to preview to book content, perhaps read the introduction or even preface before buying the books. Also, some of the people might also shop around the bookstore to look for books to buy without a specific books in their mind. 
+
+Also, majority of the respondent who buy books in physical store face problem when it comes to looking for the cheapest books to buy or at least feel neutral to the problem. This is believe that it is because respondent are require to travel to different bookstore to find out the price of the book meanwhile it is easier to find out online as they can just go to the bookstore website and find out the price immediately. 
