@@ -2,9 +2,9 @@
 
 ## Table Of Contents
 
-- [Low Fedility](Design1.md#low-fedility)
+- [Low Fidelity](Design1.md#low-fidelity)
 
-- [High Fedility](Design1.md#high-fidelity)
+- [High Fidelity](Design1.md#high-fidelity)
 
 - [Usability Testing](Design1.md#usability-testing)
 
@@ -14,41 +14,41 @@
 
   - [Participant 2](Design1.md#participant-2)
 
-## Low Fedility
+## Low Fidelity
 
-Low fedility prototype is a rough sketch of the design in either hand drawn or drawn in simple tools like paint. Low fedility is the rough output of the discussion between team member on the aspect of UI design. 
+Low fidelity prototype is a rough sketch of the design in either hand drawn or drawn in simple tools like paint. Low fidelity is the rough output of the discussion between team member on the aspect of UI design. 
 
 *Login Activity*
 
-![Login](lowfedility/d1_login.PNG)
+![Login](lowfidelity/d1_login.PNG)
 
 *Register Activity*
 
-![Register](lowfedility/d1_register.PNG)
+![Register](lowfidelity/d1_register.PNG)
 
 *Main Activity*
 
-![Main](lowfedility/d1_main.PNG)
+![Main](lowfidelity/d1_main.PNG)
 
 *Search Activity*
 
-![Search](lowfedility/d1_search.PNG)
+![Search](lowfidelity/d1_search.PNG)
 
 *Result Activity*
 
-![Result](lowfedility/d1_result.PNG)
+![Result](lowfidelity/d1_result.PNG)
 
 *Book Info Activity*
 
-![Book Info](lowfedility/d1_bookinfo.PNG)
+![Book Info](lowfidelity/d1_bookinfo.PNG)
 
 *Bookstore Activity*
 
-![Bookstore](lowfedility/d1_bookstore.PNG)
+![Bookstore](lowfidelity/d1_bookstore.PNG)
 
-## High Fedility
+## High Fidelity
 
-High Fedility prototype is an mock up program that without actual functionality but only with UI design. The function of each UI component will be explain the below together while showing the screenshot. 
+High Fidelity prototype is an mock up program that without actual functionality but only with UI design. The function of each UI component will be explain the below together while showing the screenshot. 
 
 *Login Activity*
 
