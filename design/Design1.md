@@ -1,5 +1,19 @@
 # Design 1
 
+## Table Of Contents
+
+- [Low Fedility](Design1.md#low-fedility)
+
+- [High Fedility](Design1.md#high-fidelity)
+
+- [Usability Testing](Design1.md#usability-testing)
+
+  - [Usability Testing TODO](Design1.md#usability-testing-todo)
+
+  - [Participant 1](Design1.md#participant-1)
+
+  - [Participant 2](Design1.md#participant-2)
+
 ## Low Fedility
 
 Low fedility prototype is a rough sketch of the design in either hand drawn or drawn in simple tools like paint. Low fedility is the rough output of the discussion between team member on the aspect of UI design. 
@@ -91,3 +105,43 @@ High Fedility prototype is an mock up program that without actual functionality 
 *Bookstore Activity*
 
 ![Bookstore Activity](screenshot/d1_bookstore.png)
+
+## Usability Testing
+
+The usability testing for design one stop after only 2 participants as we realize the design are fill with tons of flaw to be improved, which is how we get to the next [design](Design2.md). Participant are asked to use the app, and think out loud with any thought they have. 
+
+### Usability testing TODO
+
+1. Try register account and login with email
+
+1. Try to identify different login method and login
+
+1. Identify the list of bookstore and look for the furtest bookstore and tell whr is it locate
+
+1. Search for a book name *Intelligent Investor*
+
+1. Identify the bookstore that sold at cheapest price
+
+### Participant 1
+
+1. Think the design of putting register in email login is weird
+
+1. Able to identify different method 
+
+1. Able to identify bookstores, but wish for a sort function
+
+1. Able to use search, but suggest overwhelming option to just search a book that name are known
+
+1. No problem in identifying bookstore that sold at cheapest price 
+
+### Participant 2
+
+1. Take a while to find register button and think could be better to put all together
+
+1. Able to identify different method 
+
+1. Able to identify bookstores
+
+1. Doesn't know if he should fill in all field, or which field is required
+
+1. No problem in identifying bookstore that sold at cheapest price, but hope if can take range into consideration
