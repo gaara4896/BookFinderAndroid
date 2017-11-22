@@ -67,3 +67,13 @@ Bookstore located in various location of Malaysia, despite we can search the pla
 
 1. Content
     - Any user can update the outdated information
+
+## User research
+
+### Online survey form 
+
+#### Test run
+
+#### Actual survey
+
+[Data](Research.md)
