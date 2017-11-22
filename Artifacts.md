@@ -149,15 +149,15 @@ Each member of team will find a close friend, and let them do the test run of th
 
 ### Actual Online Survey
 
-*** Improved question***
+***Improved question***
 
   1. Average number of books you buy per year
-      - <5
+      - < 5
       - 5-10
       - 10-15
       - 15-20
       - 20-30
-      - >30
+      - \> 30
 
   1. What are the reason you buy books?
       - Self enrichment
