@@ -1,5 +1,5 @@
 | Age | Job | How often read books? | Average number fo books buy per year | Types of books normally read | Reason to read books | Medium to buy books | Ever face problem in looking for cheap book | Likelyhood of using bookfinding app (1-10) |
-|-----|--------------------------|-----------------------|--------------------------------------|-----------------------------------------------:|-------------------------------|------------------------------|---------------------------------------------|--------------------------------------------|
+|-----|--------------------------|-----------------------|--------------------------------------|------------------------------------------------|-------------------------------|------------------------------|---------------------------------------------|--------------------------------------------|
 | 19 | Student | 3 times/ week | 10-15 | Business, entrepreneurship | Self enrichment | Physical bookstore | Yes | 9 |
 | 20 | Student | 5 times/ week | 15-20 | Finance | Investing | Online, physical bookstore | Yes | 10 |
 | 18 | Student | 1 times / month | <5 | Enterpreneurship | Self enrichment | Physical bookstore | Neutral | 6 |
@@ -24,9 +24,9 @@
 | 20 | Student | Once per month | <5 | Novel | Entertaiment | Physical bookstore, bookfair | Yes | 7 |
 | 16 | Student | Very rare | <5 | Novel | Entertaiment | Physical bookstore | Neutral | 4 |
 | 17 | Student | Once per week | 5-10 | Finance | Knowledge | Physical bookstore | Neutral | 6 |
-| 25 | Student |  |  |  |  |  |  |  |
-| 20 | Student |  |  |  |  |  |  |  |
-| 21 | IT Support |  |  |  |  |  |  |  |
-| 23 | Backend developer |  |  |  |  |  |  |  |
-| 22 | Secretary |  |  |  |  |  |  |  |
-| 22 | Student |  |  |  |  |  |  |  |
+| 25 | Student | Once per month | <5 | Business, entrepreneurship | Self enrichment | Physical bookstore | Yes | 7 |
+| 20 | Student | 5 times / week | 15-20 | Philosophy, Selfhelp | Self enrichment | Online bookstore | Yes | 7 |
+| 21 | IT Support | Very rare | <5 | Any | Entertaiment | Bookfair | No | 1 |
+| 23 | Backend developer | 3 times / week  | 5-10 | Programming | Work | Physical Bookstore | yes | 9 |
+| 22 | Secretary | once per week | <5 | Novel | Entertaiment | Physical bookstore | Neutral | 5 |
+| 22 | Student | Everyday | 20-30 | Business, entrepreneurship | Self enrichment | Online, Bookfair | No | 1 |

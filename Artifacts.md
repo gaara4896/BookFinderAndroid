@@ -6,13 +6,23 @@
 
 - [PACT Analysis](Artifacts.md#pact-analysis)
 
-  * [2.1 People](Artifacts.md#people)
+  * [People](Artifacts.md#people)
 
-  * [2.2 Activities](Artifacts.md#activities)
+  * [Activities](Artifacts.md#activities)
 
-  * [2.3 Context](Artifacts.md#context)
+  * [Context](Artifacts.md#context)
 
-  * [2.4 Technology](Artifacts.md#technology)
+  * [Technology](Artifacts.md#technology)
+
+- [User research](Artifacts.md#user-research)
+ 
+  * [Online survey Test Run](Artifacts.md#online-survey-form)
+
+    - [Observation from Test run](Artifacts.md#observation-from-test-run)
+
+  * [Actual Online Survey](Artifacts.md#actual-survey)
+
+    - [Observation from result](Artifacts.md#observation-from-result)
 
 ## Problem Analysis
 
@@ -70,10 +80,73 @@ Bookstore located in various location of Malaysia, despite we can search the pla
 
 ## User research
 
-### Online survey form 
+### Online survey Test Run
 
-#### Test run
+*Question*
 
-#### Actual survey
+1. Age 
 
-[Data](Research.md)
+1. Job 
+    - Student
+    - Lecturer
+    - Doctor
+    - Engineer
+    - Other
+
+1. How often you read books?
+    - Very rare
+    - Once per month
+    - Once per week
+    - 3 times per week
+    - 5 times per week
+    - Everyday
+
+1. Average number of books you buy per year
+
+1. What are the types of book you normally read?
+    - Philantrophy
+    - Philosophy
+    - IT
+    - Finance
+    - Business
+    - Entrepreneurship
+    - Other
+
+1. What are the reason you buy books?
+    - Self enrichment
+    - Work
+    - Friend recommendation
+    - Other
+
+1. Medium of buying books 
+    - Physical bookstore
+    - Online
+    - Bookfair
+
+1. Ever face problem in finding cheapest books
+    - Yes
+    - Neutral
+    - No 
+
+1. How likely you will use a book finding app if there exist one 
+    - Very likely
+    - Likely
+    - Neutral
+    - Not likely
+    - Very not likely
+
+#### Observation from Test run
+
+Each member of team will find a close friend, and let them do the test run of the question and observe from how they input and find ways to improve the question. Observation gain from the research - 
+
+- Tend to give a range for averange number of books 
+
+- Friend recommendation might be vague as for the reason of read books 
+
+- Google form scale can be used for likelyhood of using app
+
+### Actual Online Survey
+
+[Result data](Research.md)
+
+#### Observation from result
