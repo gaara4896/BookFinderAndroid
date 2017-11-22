@@ -24,6 +24,8 @@
 
     - [Observation from result](Artifacts.md#observation-from-result)
 
+- [Design and Usability Testing](Artifacts.md#design-and-usability-testing)
+
 ## Problem Analysis
 
 In Malaysia, there are a large numbers of bookstores everywhere ranging from Popular, MPH bookstore, etc. Each bookstore sell books at different prices. Despite numbers of bookstore around Malaysia, few problem had been faced. 
@@ -203,3 +205,11 @@ Positive corelation between frequency of reading books and books buy per year ar
 From the observation, we can know that there are still a larger proportion of the poeple who buy books in physical store than buy it online. This could be because buying books in physical store allow them to preview to book content, perhaps read the introduction or even preface before buying the books. Also, some of the people might also shop around the bookstore to look for books to buy without a specific books in their mind. 
 
 Also, majority of the respondent who buy books in physical store face problem when it comes to looking for the cheapest books to buy or at least feel neutral to the problem. This is believe that it is because respondent are require to travel to different bookstore to find out the price of the book meanwhile it is easier to find out online as they can just go to the bookstore website and find out the price immediately. 
+
+## Design and Usability Testing
+
+[Design 1](design/Design1.md)
+
+[Design 2](design/Design2.md)
+
+[Design 3](design/Design3.md)
