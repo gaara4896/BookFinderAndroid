@@ -260,6 +260,10 @@ Here is an overview of the story board of our prototype.
 
 ![Story Board](StoryBoard.png)
 
+Watch the prototype video at youtube 
+
+[![Video Prorotype](http://img.youtube.com/vi/IhylrZC_khM/0.jpg)](https://www.youtube.com/watch?v=IhylrZC_khM)
+
 ## Implementation
 
 The app can be implemented in a client server architecture, where the server store all the location of bookstores, price of books, book description, and other details. The server will also be very API centric, as it will frequently query the latest book price from the existing bookstore server if they have, and cache the information in local. Besides, user can also update the book price in the app, and later be approved by an admin and the detail will then be updated in the database. Block diagram will looks something like this. 
