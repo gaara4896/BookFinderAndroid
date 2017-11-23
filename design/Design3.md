@@ -129,3 +129,5 @@ The usability test are carry out smoothly interviewing 5 participants. Participa
 ### Summary
 
 1. Despite advance search button might took a while to look, but it doesn't take too long and it is quite suitable to place in menu as advance search are less used. 
+
+[Back to Artifacts](../Artifacts.md)

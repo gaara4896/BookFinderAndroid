@@ -30,3 +30,5 @@
 | 23 | Backend developer | 3 times / week  | 5-10 | Programming | Work | Physical Bookstore | yes | 9 |
 | 22 | Secretary | once per week | <5 | Novel | Entertaiment | Physical bookstore | Neutral | 5 |
 | 22 | Student | Everyday | 20-30 | Business, entrepreneurship | Self enrichment | Online, Bookfair | No | 1 |
+
+[Back to Artifacts](Artifacts.md)

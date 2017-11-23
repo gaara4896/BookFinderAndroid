@@ -28,6 +28,8 @@
 
 - [Design and Usability Testing](Artifacts.md#design-and-usability-testing)
 
+- [Minimal Viable Prototype](Artifacts.md#minimal-viable-prototype)
+
 - [Implementation](Artifacts.md#implementation)
 
 ## Life Cycle
@@ -251,6 +253,12 @@ As for high fidelity, we choose to do it in android studio and directly run it i
 [Design 2](design/Design2.md)
 
 [Design 3](design/Design3.md)
+
+## Minimal Viable Prototype
+
+Here is an overview of the story board of our prototype.
+
+![Story Board](StoryBoard.png)
 
 ## Implementation
 

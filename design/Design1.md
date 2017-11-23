@@ -155,3 +155,5 @@ The usability testing for design one stop after only 2 participants as we realiz
 1. Give more information to user when using search
 
 1. Opt for sort, as user might need to sort by range instead of price
+
+[Back to Artifacts](../Artifacts.md)
