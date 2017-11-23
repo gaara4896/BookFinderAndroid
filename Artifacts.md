@@ -260,7 +260,7 @@ Here is an overview of the story board of our prototype.
 
 ![Story Board](StoryBoard.png)
 
-Watch the prototype video at youtube 
+Watch the prototype video at [youtube](https://www.youtube.com/watch?v=IhylrZC_khM) 
 
 [![Video Prorotype](http://img.youtube.com/vi/IhylrZC_khM/0.jpg)](https://www.youtube.com/watch?v=IhylrZC_khM)
 
