@@ -20,6 +20,8 @@
 
   - [Participant 5](Design3.md#participant-5)
 
+  - [Summary](Design3.md#summary)
+
 ## Low Fidelity
 
 Most of the improve in this design 3 are only added a back button as we realize mroe than one participants having problem with going back, which most likely to be iPhone users. Also we had improve the Main Activity.
@@ -123,3 +125,7 @@ The usability test are carry out smoothly interviewing 5 participants. Participa
 1. No problem
 
 1. Took a while, but not too long to locate
+
+### Summary
+
+1. Despite advance search button might took a while to look, but it doesn't take too long and it is quite suitable to place in menu as advance search are less used. 

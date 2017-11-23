@@ -14,6 +14,8 @@
 
   - [Participant 2](Design1.md#participant-2)
 
+  - [Summary](Design1.md#summary)
+
 ## Low Fidelity
 
 Low fidelity prototype is a rough sketch of the design in either hand drawn or drawn in simple tools like paint. Low fidelity is the rough output of the discussion between team member on the aspect of UI design. 
@@ -145,3 +147,11 @@ The usability testing for design one stop after only 2 participants as we realiz
 1. Doesn't know if he should fill in all field, or which field is required
 
 1. No problem in identifying bookstore that sold at cheapest price, but hope if can take range into consideration
+
+### Summary
+
+1. Not user friend design for login page
+
+1. Give more information to user when using search
+
+1. Opt for sort, as user might need to sort by range instead of price

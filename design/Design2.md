@@ -20,6 +20,8 @@
 
   - [Participant 5](Design2.md#participant-5)
 
+  - [Summary](Design2.md#summary)
+
 ## Low Fidelity
 
 As you might realize that the design of this low fidelity prototype are much more detail than [design 1](Design1.md). This is because when we designing low fidelity for [design 1](Design1.md), we still do not have any design in mind, meanwhile we already have a high fidelity prototype for [design 1](Design1.md) hence we draw a much more detailed low fidelity prototype. 
@@ -211,3 +213,11 @@ The usability test are carry out smoothly interviewing 5 participants. Participa
 1. Having problem to locate advance search button, probably too small, understand every single field
 
 1. Able to identify the sort button
+
+### Summary 
+
+1. Login page had been improved to become user friendly 
+
+1. Small advance search button 
+
+1. User might opt for back button as some phone might not come with back button

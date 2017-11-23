@@ -2,6 +2,8 @@
 
 ## Table Of Contents
 
+- [Life Cycle](Artifacts.md#life-cycle)
+
 - [Problem Analysis](Artifacts.md#problem-analysis)
 
 - [PACT Analysis](Artifacts.md#pact-analysis)
@@ -25,6 +27,24 @@
     - [Observation from result](Artifacts.md#observation-from-result)
 
 - [Design and Usability Testing](Artifacts.md#design-and-usability-testing)
+
+- [Implementation](Artifacts.md#implementation)
+
+## Life Cycle
+
+*Life Cycle Diagram*
+
+![Life Cycle Diagram](LifeCycleDiagram.jpeg)
+
+Life cycle diagram is a diagram that show the life cycle in a bigger picture. The general life cycle of this project started with problem Identification. In problem identification, we identify few problem area, and had decided to choose this book problem because books are most related to us in our daily life. We then move on to PACT analysis, where we try to identify few relevant information regarding to our project such as target market, technology, activities, context. 
+
+The next stage is user research, where we analyze and validate our idea. This is the stage where we validate if people think the same as us, and if they face this issue in their real life. In this stage, we possible outcome could be receive, which is 
+
+  1. The result are as if we expected, and hence we will be able to continue on with out project as we had validate our idea. Despite validate idea, it does not simple reflect that the project will be successful because people might face this problem but the solution might not be what they are looking for, or fail in marketing campaign, or many other factors. 
+
+  2. Where the result doesn't reflect and support our idea.This is where we had to decide if we should continue with our project. We strongly believe that many of the time customer does not know what they want, but the solution might also be not what the customer want, hence decision had to be made in this stage. People who strongly believe in the idea and had experienced it might continue, meanwhile some of the people who half believe will give up at this stage. 
+
+The next will be a cycle, where team sit down discuss about the UI design, and draw out low fidelity prototype on the spot. Designer then develop a high fidelity prototype by following the low fidelity prototype that result from the discussion and move on to usability test. After the userbility test, the feedback from the usability test will be used to improve the current prototype to make it become a better version of it. After a while, minimal viable prototype will be developed and then can move on to the next stage which is real implementation of functionality and backend. One important thing to note at this stage is that minimal viable prototype does not mean perfect, but rather a minimal version of the UI that able to market to the user and improve later on. In business, it is not practical to wait until a product to be perfect to only market to the public, because no revenue will be generate at that stage, but rather it should look for a minimal viable product and market it, and improve from the minimal viable product after the product had been publicly available and feedback had colelcted from mass public. 
 
 ## Problem Analysis
 
@@ -170,7 +190,13 @@ Each member of team will find a close friend, and let them do the test run of th
   1. How likely you will use a book finding app if there exist one 
       - scale 1 - 10
 
-The question distribute digitally through several medium, which include social media, blog, messaging app, etc. This is the [Result](Research.md) of the survey after being organized. 
+The question distribute digitally through several medium, which include social media, blog, messaging app, etc. This is the [Result](Research.md) of the survey after being organized. The reason of distribute it through digital medium is because 
+
+  1. Wide range of people who can answer to the survey
+
+  1. People in any age might also read books, and our target market are huge, which basically anyone who buy books frequently, so we does not need to concern about who to answer the question 
+
+  1. The size we capped it at 40, however the actual data collected is less than 40, because some prank answer are needed to filter out. Around 40 is more than enough for our case as we only focus on those who buy books frequently, hence it doesn't require to know what the mass think if the mass does not buy books frequently. 
 
 Some prank data had been filter, such as meanwhile writing some irrelevant thign in some of the question that other option are provided or spam from the same google account. 
 
@@ -206,10 +232,28 @@ From the observation, we can know that there are still a larger proportion of th
 
 Also, majority of the respondent who buy books in physical store face problem when it comes to looking for the cheapest books to buy or at least feel neutral to the problem. This is believe that it is because respondent are require to travel to different bookstore to find out the price of the book meanwhile it is easier to find out online as they can just go to the bookstore website and find out the price immediately. 
 
+What our app can do to user is that the user now not only can search for book price in a central repository, user can also easily find the nearest bookstore, and find the cheapest bookstore that sell the book which user want to buy. 
+
 ## Design and Usability Testing
+
+For low fidelity, we choosed to use paint to draw because it can be found in every Microsoft Window computer, it is easy to use and also it doesn't need to be very nice as it is just a sketch of the design. 
+
+As for high fidelity, we choose to do it in android studio and directly run it in real Android Phone. This is because several reason, which include 
+
+  - Designer can experience it in real mobile phone
+
+  - Some team member are experienced in doing android apps, hence more efficient and able to achieve more than using a stranger prototype software
+
+  - Drag and drop, high simplicity
 
 [Design 1](design/Design1.md)
 
 [Design 2](design/Design2.md)
 
 [Design 3](design/Design3.md)
+
+## Implementation
+
+The app can be implemented in a client server architecture, where the server store all the location of bookstores, price of books, book description, and other details. The server will also be very API centric, as it will frequently query the latest book price from the existing bookstore server if they have, and cache the information in local. Besides, user can also update the book price in the app, and later be approved by an admin and the detail will then be updated in the database. Block diagram will looks something like this. 
+
+![Block Diagram](BlockDiagram.png)
