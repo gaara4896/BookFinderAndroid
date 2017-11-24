@@ -18,11 +18,11 @@
 
 - [User research](Artifacts.md#user-research)
  
-  * [Online survey Test Run](Artifacts.md#online-survey-form)
+  * [Online survey Test Run](Artifacts.md#online-survey-test-run)
 
     - [Observation from Test run](Artifacts.md#observation-from-test-run)
 
-  * [Actual Online Survey](Artifacts.md#actual-survey)
+  * [Actual Online Survey](Artifacts.md#actual-online-survey)
 
     - [Observation from result](Artifacts.md#observation-from-result)
 
